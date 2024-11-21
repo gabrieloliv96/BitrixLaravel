@@ -13,7 +13,7 @@ Route::get('/', function () {
 
 Route::prefix('webhook')->group(function () {
     Route::post('/bitrix', [WebhookController::class, 'webhookBitrix']);
-    Route::post('/clockify', [WebhookClockifyController::class, 'webhookBitrix']);
+    Route::post('/clockify', [WebhookClockifyController::class, 'webhookClockify']);
 });
 
 // Route::post('/webhook', [WebhookController::class, 'webhook']);
